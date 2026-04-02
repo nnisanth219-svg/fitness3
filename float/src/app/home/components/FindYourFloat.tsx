@@ -262,6 +262,7 @@ export default function FindYourFloat() {
                       First name
                     </label>
                     <input
+                      key="first-name-input"
                       type="text"
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
@@ -276,6 +277,7 @@ export default function FindYourFloat() {
                       Email
                     </label>
                     <input
+                      key="email-input-main"
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -291,6 +293,7 @@ export default function FindYourFloat() {
                       Have you floated before?
                     </span>
                     <button
+                      key="toggle-button"
                       type="button"
                       onClick={() => setHasFloated(!hasFloated)}
                       className="relative flex-shrink-0"
@@ -315,6 +318,7 @@ export default function FindYourFloat() {
                   </div>
 
                   <button
+                    key="submit-button"
                     type="submit"
                     className="btn-blue w-full py-4 rounded-2xl text-sm font-medium tracking-wide"
                   >
@@ -347,6 +351,7 @@ export default function FindYourFloat() {
                     First sessions are $75. No experience needed. No goals required.
                   </p>
                   <button
+                    key="cta-button"
                     onClick={() => setFormStep('form')}
                     className="btn-blue w-full py-4 rounded-2xl text-sm font-medium tracking-wide"
                   >
@@ -393,6 +398,7 @@ export default function FindYourFloat() {
                       </div>
                       <form onSubmit={handleDownloadSubmit} className="flex gap-2">
                         <input
+                          key="email-input"
                           type="email"
                           value={downloadEmail}
                           onChange={(e) => setDownloadEmail(e.target.value)}
@@ -405,6 +411,7 @@ export default function FindYourFloat() {
                           }}
                         />
                         <button
+                          key="send-button"
                           type="submit"
                           className="text-xs font-medium px-4 py-2 rounded-xl transition-colors"
                           style={{

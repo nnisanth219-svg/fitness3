@@ -17,27 +17,28 @@ export default function Header() {
           className="cursor-pointer"
           onClick={() => router?.push('/')}
           style={{
-            textShadow: '0 4px 8px rgba(26, 35, 50, 0.4), 0 8px 16px rgba(26, 35, 50, 0.25), 0 12px 24px rgba(107, 140, 174, 0.15)',
+            textShadow: '0 1px 2px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(255, 255, 255, 0.4)',
             transform: 'translateZ(0) perspective(1000px)',
-            filter: 'drop-shadow(0 8px 16px rgba(26, 35, 50, 0.3)) drop-shadow(0 4px 8px rgba(107, 140, 174, 0.5))',
-            letterSpacing: '0.02em',
-            fontWeight: '600',
+            color: '#ffffff',
+            filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))',
+            fontSize: '3.1em',
+            fontWeight: '650',
             transition: 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'translateZ(20px) scale(1.05)';
-            e.currentTarget.style.textShadow = '0 6px 12px rgba(26, 35, 50, 0.5), 0 12px 24px rgba(26, 35, 50, 0.35), 0 16px 32px rgba(107, 140, 174, 0.25)';
-            e.currentTarget.style.filter = 'drop-shadow(0 12px 24px rgba(26, 35, 50, 0.4)) drop-shadow(0 6px 12px rgba(107, 140, 174, 0.6))';
+            e.currentTarget.style.textShadow = '0 1px 3px rgba(255, 255, 255, 0.7), 0 2px 6px rgba(255, 255, 255, 0.5)';
+            e.currentTarget.style.filter = 'drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5))';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = 'translateZ(0) perspective(1000px)';
-            e.currentTarget.style.textShadow = '0 4px 8px rgba(26, 35, 50, 0.4), 0 8px 16px rgba(26, 35, 50, 0.25), 0 12px 24px rgba(107, 140, 174, 0.15)';
-            e.currentTarget.style.filter = 'drop-shadow(0 8px 16px rgba(26, 35, 50, 0.3)) drop-shadow(0 4px 8px rgba(107, 140, 174, 0.5))';
+            e.currentTarget.style.textShadow = '0 1px 2px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(255, 255, 255, 0.4)';
+            e.currentTarget.style.filter = 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))';
           }}
         >
           <AppLogo
             size={36}
-            text="Meditation"
+            text="MEDITATION"
             iconName="SparklesIcon"
           />
         </div>
